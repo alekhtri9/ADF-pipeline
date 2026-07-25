@@ -19,10 +19,6 @@
 			"type": "string",
 			"defaultValue": "https://storagedatafactoryalekh.dfs.core.windows.net/"
 		},
-		"mantriger_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/317ddbb6-7eac-4e68-b4b4-ab8957d32ee6/resourceGroups/RG-ADFCourse/providers/Microsoft.Storage/storageAccounts/storagedatafactoryalekh"
-		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -58,9 +54,6 @@
 					},
 					"linkservicedl_properties_typeProperties_url": {
 						"value": "[parameters('linkservicedl_properties_typeProperties_url')]"
-					},
-					"mantriger_properties_typeProperties_scope": {
-						"value": "[parameters('mantriger_properties_typeProperties_scope')]"
 					}
 				}
 			},

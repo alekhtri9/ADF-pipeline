@@ -14,9 +14,6 @@
 		"linkservicedl_properties_typeProperties_url": {
 			"value": "https://storagedatafactoryalekh.dfs.core.windows.net/"
 		},
-		"mantriger_properties_typeProperties_scope": {
-			"value": "/subscriptions/317ddbb6-7eac-4e68-b4b4-ab8957d32ee6/resourceGroups/RG-ADFCourse/providers/Microsoft.Storage/storageAccounts/storagedatafactoryalekh"
-		},
 		"containerUri": {
 			"value": ""
 		},

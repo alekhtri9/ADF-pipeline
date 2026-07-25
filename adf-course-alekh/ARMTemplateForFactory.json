@@ -18,10 +18,6 @@
 		"linkservicedl_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://storagedatafactoryalekh.dfs.core.windows.net/"
-		},
-		"mantriger_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/317ddbb6-7eac-4e68-b4b4-ab8957d32ee6/resourceGroups/RG-ADFCourse/providers/Microsoft.Storage/storageAccounts/storagedatafactoryalekh"
 		}
 	},
 	"variables": {
@@ -876,26 +872,6 @@
 						"type": "SecureString",
 						"value": "[parameters('linkservicedl_accountKey')]"
 					}
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/mantriger')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"runtimeState": "Started",
-				"pipelines": [],
-				"type": "BlobEventsTrigger",
-				"typeProperties": {
-					"blobPathBeginsWith": "/source/blobs/csvfiles/DimAirline.csv",
-					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('mantriger_properties_typeProperties_scope')]",
-					"events": [
-						"Microsoft.Storage.BlobCreated"
-					]
 				}
 			},
 			"dependsOn": []
