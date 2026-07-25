@@ -1,0 +1,15 @@
+{
+	"name": "adf-course-alekh",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0752ba8d-bb00-479f-9c32-422ed87e78cd",
+		"tenantId": "6de51075-ca41-4893-a760-92b0764c3545"
+	}
+}
